@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  min-height: 67px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #324b68;
+}
+header h1 a:hover {
+  color: #c93078;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fc3d96;
+}
+header nav ul li a:hover {
+  cursor: pointer;
+  color: #c93078;
+  text-decoration: underline;
+}
+.App {
+  background-color: #f8fbfd;
+}
+.wrapper {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.wrapper .bannerFormulario {
+  width: 100%;
+  min-height: 80vh;
+  background: url("https://image.freepik.com/fotos-gratis/homem-animado-em-jaqueta-jeans-preta-relaxando-com-a-namorada-retrato-ao-ar-livre-de-casal-feliz-explorando-a-cidade_197531-12259.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .bannerResultado {
+  width: 100%;
+  min-height: 80vh;
+  background: url("https://image.freepik.com/fotos-gratis/par-velho-usando-smartphone_23-2148014550.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .divFormulario,
+.wrapper .divResultado {
+  color: #324b68;
+  padding: 0px 40px 0px 40px;
+}
+.wrapper .formulario,
+.wrapper .divFormulario,
+.wrapper .divResultado {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .formulario label {
+  width: 100%;
+  font-size: 1.4em;
+}
+.wrapper .formulario input,
+.wrapper .formulario select {
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #111;
+  background-color: #f8fbfd;
+}
+.wrapper .formulario select {
+  font-size: 1.2em;
+}
+.wrapper .formulario .divErro {
+  width: 100%;
+  height: 50px;
+  color: #842029;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  background-color: #f8d7da;
+  padding: 0 10px;
+  margin: 1px 0px;
+}
+.wrapper .divResultado h1,
+.wrapper .divResultado p {
+  font-size: 1.9rem;
+}
+.wrapper .divResultado p span {
+  background-color: #fc3d96;
+  color: #fff;
+}
+.wrapper .formulario button,
+.wrapper .divResultado button {
+  margin-top: 17px;
+  border: none;
+  border-radius: 4em;
+  background-color: #fc3d96;
+  height: 48px;
+}
+.wrapper .formulario .hideButton {
+  display: none;
+}
+.wrapper .formulario .showButton {
+  display: block;
+}
+.wrapper .formulario button:hover,
+.wrapper .divResultado button:hover {
+  background-color: #c93078;
+  border: none;
+}
+.wrapper .formulario button:focus,
+.wrapper .divResultado button:focus {
+  background-color: #fc3d96;
+}
+.wrapper .formulario Select {
+  margin-top: 17px;
+  color: #324b68;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Signika", sans-serif;
+}
+footer {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h3 {
+  font-size: 1.3em;
+  color: #324b68;
+}
+footer h3 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fc3d96;
+}
+footer h3 a:hover {
+  cursor: pointer;
+  color: #c93078;
+  text-decoration: underline;
+}
+@media (max-width: 1080px) {
+  header {
+    justify-content: center;
+  }
+  header nav,
+  .wrapper .bannerFormulario,
+  .wrapper .bannerResultado {
+    display: none;
+  }
+  .wrapper .formulario {
+    padding: 10px 35px;
+  }
+  .wrapper .formulario label {
+    width: 100%;
+    font-size: 1em;
+  }
+  .wrapper .formulario .loadButton {
+    display: none;
+  }
+}
